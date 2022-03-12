@@ -1,0 +1,13 @@
+<p>products works!</p>
+
+<button class="btn btn-primary" [class.disabled]="isValid" (click)="myFunction()">click!</button>
+
+
+<div *ngIf="products.length>0">
+  <div *ngFor="let data of products">
+    <app-product [data]="data"></app-product>
+  </div>
+</div>
+<div *ngIf="products.length==0">
+      oops,no product
+</div>

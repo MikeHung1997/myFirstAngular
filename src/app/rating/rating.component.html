@@ -1,0 +1,14 @@
+
+<i class="glyphicon" [class.glyphicon-star-empty]="ratingPoint<=0" [class.glyphicon-star]="ratingPoint>=1" (mouseover)="overFunction(1)" (click)="overFunction(0)"></i>
+<i class="glyphicon" [class.glyphicon-star-empty]="ratingPoint<2" [class.glyphicon-star]="ratingPoint>=2" (mouseover)="overFunction(2)"></i>
+<i class="glyphicon" [class.glyphicon-star-empty]="ratingPoint<3" [class.glyphicon-star]="ratingPoint>=3" (mouseover)="overFunction(3)"></i>
+<i class="glyphicon" [class.glyphicon-star-empty]="ratingPoint<4" [class.glyphicon-star]="ratingPoint>=4" (mouseover)="overFunction(4)"></i>
+<i class="glyphicon" [class.glyphicon-star-empty]="ratingPoint<5" [class.glyphicon-star]="ratingPoint>=5"(mouseover)="overFunction(5)"></i>
+<div [ngSwitch]="ratingPoint">
+  <div *ngSwitchCase="0">poor</div>
+  <div *ngSwitchCase="1">no good</div>
+  <div *ngSwitchCase="2">is ok</div>
+  <div *ngSwitchCase="3">not bad</div>
+  <div *ngSwitchCase="4">great</div>
+  <div *ngSwitchCase="5">perfect</div>
+</div>

@@ -1,0 +1,12 @@
+
+<div class="media">
+  <div class="media-left">
+  <img class="mr-3" src={{data.imgURL}} alt="Generic placeholder image">
+</div>
+  <div class="media-body">
+    <h5 class="mt-0">{{data.title}}</h5>
+    {{data.description}}
+    <app-rating [ratingPoint]="data.ratingPoint"></app-rating>
+
+  </div>
+</div>
